@@ -1,14 +1,14 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body{
-    background-color: #21232a;
+    background-color: rgb(58, 21, 146);
     padding: 20px;
 }
 
 input{
-    color: cornflowerblue;
+    color: black;
     font-size: 1.2rem;
     width: 100%;
 }
@@ -19,4 +19,28 @@ h2{
 
 li{
     color: cornsilk;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    align-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.card p {
+    padding: 5px;
+    text-align: center;
+}
+
+.card img {
+    max-height: 150px;
 }
