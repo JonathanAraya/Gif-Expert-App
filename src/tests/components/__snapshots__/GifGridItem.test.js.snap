@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GridItem /> Debe mostrar el componente correctamente  1`] = `
+<div
+  className="card animate__animated animate__fadeInLeft"
+>
+  <img
+    alt="Saludo"
+    src="https://localhost.cl/asd"
+  />
+  <p>
+    Saludo
+  </p>
+</div>
+`;
