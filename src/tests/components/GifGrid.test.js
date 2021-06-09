@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+
 import { shallow } from "enzyme"
 import {GifGrid} from '../../components/GifGrid';
 import { useFetchGifs } from "../../hooks/useFetchGifs";
@@ -25,7 +27,12 @@ describe('Pruebas en <GifGrid />', () => {
             id: 'ABC',
             url: 'https://localhost.cl/img',
             title: 'Titulo'
-        }]
+        },
+        {
+            id: 'ZXC',
+            url: 'https://localhost.cl/img2',
+            title: 'Titulo2'
+        }];
 
         useFetchGifs.mockReturnValue({
             data: gifs,
@@ -33,7 +40,10 @@ describe('Pruebas en <GifGrid />', () => {
         });
 
         const wrapper = shallow(<GifGrid category={category} />)
+        
         expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('p')).not.toBe(true);
+        expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
 
     });
     

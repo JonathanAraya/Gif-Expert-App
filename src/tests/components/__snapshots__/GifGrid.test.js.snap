@@ -39,6 +39,12 @@ exports[`Pruebas en <GifGrid /> debe mostrar items luego de la respuesta del use
       title="Titulo"
       url="https://localhost.cl/img"
     />
+    <GifGridItem
+      id="ZXC"
+      key="ZXC"
+      title="Titulo2"
+      url="https://localhost.cl/img2"
+    />
   </div>
 </Fragment>
 `;
